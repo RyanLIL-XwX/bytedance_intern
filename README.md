@@ -8,8 +8,6 @@
 ## 步骤 1: 下载NEU表面缺陷数据库
 首先，需要获取NEU表面缺陷数据库，该数据库包含用于表面缺陷检测的图像数据。该数据库以压缩的`.rar`格式提供，因此需要解压缩以访问其中的图像数据。
 
----
-
 ## 步骤 2: 解压缩`.rar`文件
 由于数据库是压缩在`.rar`文件中的，因此需要使用合适的工具进行解压缩。在研究后，我决定使用通过Homebrew安装的`unar`工具。
 并且在压缩后我的到了NEU surface defect database的文件夹，里面全部都是`bmp`格式的图像文件。
@@ -118,4 +116,25 @@ if __name__ == "__main__":
 脚本的关键部分包括使用的库（如os、cv2、json、PIL.Image和pycocotools.coco），转换过程（脚本遍历指定文件夹中的每个BMP图像，
 将其转换为JPEG格式，并收集必要的元数据如图像尺寸和文件名），生成带有占位符数据的标注信息，数据以COCO格式组织并写入到一个JSON文件中。
 类别定义为一个ID为1的类别，表示缺陷，这是本数据集的主要关注点。最后通过运行coco.py生成了一个名为output_coco_format.json的JSON文件，其中包含COCO格式的数据，可用于进一步的计算机视觉任务，例如模型训练和评估。
-  
+
+---
+
+# 使用YOLOv8模型对NEU surface defect database进行目标检测训练
+
+## 相关文件: json_to_yolo.py, split_database.py, train_yolov8.py, data.yaml(所有的代码都有详细的注释)
+
+## step 1
+先运行json_to_yolo.py文件，将COCO JSON转换为YOLO格式。
+
+## step 2
+来设置data.yaml文件包含了训练和验证数据集的路径、类别数量和类别名称等信息。YOLOv8会根据这个文件加载数据集
+
+## step 3
+运行split_database.py用来划分，划分方式是将数据集的80%用于训练，20%用于验证
+
+## step 4
+最后运行train_yolov8.py来使用yolov8模型开始对数据库进行目标检测训练
+- **安装`ultralytics库`的命令:**
+  ```bash
+  pip install ultralytics # 安装ultralytics库, YOLOv8的官方库
+  ```
