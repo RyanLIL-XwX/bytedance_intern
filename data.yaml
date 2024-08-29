@@ -1,5 +1,5 @@
-train: /Users/ryanlil86/Desktop/database/job/intern/字节跳动/computer_vision/NEU surface defect database
-val: /Users/ryanlil86/Desktop/database/job/intern/字节跳动/computer_vision/NEU surface defect database
+train: /Users/ryanlil86/Desktop/database/job/intern/字节跳动/YOLOv8/NEU surface defect database/train/images
+val: /Users/ryanlil86/Desktop/database/job/intern/字节跳动/YOLOv8/NEU surface defect database/val/images
 
 nc: 1  # 类别数量
 names: ['defect']  # 类别名称
