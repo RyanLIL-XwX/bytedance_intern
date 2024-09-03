@@ -74,7 +74,7 @@ if __name__ == "__main__":
         }
     ]
     # 定义图像文件夹路径和输出JSON文件路径, 并调用convert_to_coco函数
-    image_folder = "/Users/ryanlil86/Desktop/database/job/intern/字节跳动/computer_vision/NEU surface defect database"
+    image_folder = "/Users/ryanlil86/Desktop/database/job/intern/字节跳动/YOLOv8/NEU surface defect database"
     output_json = "output_coco_format.json"
     convert_to_coco(image_folder, output_json, categories)
     print("Conversion completed! COCO format JSON saved at:", output_json)
