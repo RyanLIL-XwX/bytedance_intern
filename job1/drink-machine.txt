@@ -1,0 +1,16 @@
+image1: Detected 3607 keypoints
+image2: Detected 4707 keypoints
+image3: Detected 3683 keypoints
+
+Processing image pair: image1 and image2
+Matches: 212, fraction in image1: 0.06, fraction in image2: 0.05
+Decision: image1_image2 does not belong to the same scene.
+
+Processing image pair: image1 and image3
+Matches: 59, fraction in image1: 0.02, fraction in image2: 0.02
+Decision: image1_image3 does not belong to the same scene.
+
+Processing image pair: image2 and image3
+Matches: 227, fraction in image1: 0.05, fraction in image2: 0.06
+Decision: image2_image3 does not belong to the same scene.
+Not enough images for multi-image stitching.

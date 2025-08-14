@@ -4,7 +4,7 @@ This repository documents four major computer vision and machine learning tasks 
 
 ---
 
-## 📌 Task 1: Multi-Image Stitching with Homography and Feature Matching
+## Task 1: Multi-Image Stitching with Homography and Feature Matching
 
 **Description:**  
 Implemented a robust image registration and stitching system using SIFT keypoint detection, feature matching, fundamental matrix filtering, and homography-based warping. The pipeline evaluates pairwise stitchability and constructs connected image mosaics using graph traversal and global warping.
@@ -20,7 +20,7 @@ Implemented a robust image registration and stitching system using SIFT keypoint
 
 ---
 
-## 📌 Task 2: Fashion MNIST Classification + Custom Image Inference
+## Task 2: Fashion MNIST Classification + Custom Image Inference
 
 **Description:**  
 Built a classification pipeline combining PCA-based dimensionality reduction and k-NN classifier for Fashion-MNIST dataset. Extended the project to process and evaluate real-world fashion images using PyTorch and custom dataset preprocessing logic.
@@ -35,7 +35,7 @@ Built a classification pipeline combining PCA-based dimensionality reduction and
 
 ---
 
-## 📌 Task 3: RCNN-Based Object Detection with Evaluation & Visualization
+## Task 3: RCNN-Based Object Detection with Evaluation & Visualization
 
 **Description:**  
 Developed an RCNN-style object detector using a pretrained ResNet-18 backbone. Implemented classification and bounding box regression heads, trained on both small and large datasets, and evaluated using mAP and per-class recall.
@@ -55,7 +55,7 @@ Developed an RCNN-style object detector using a pretrained ResNet-18 backbone. I
 
 ---
 
-## 📌 Task 4: Independent Motion Detection via Optical Flow & FOE Estimation
+## Task 4: Independent Motion Detection via Optical Flow & FOE Estimation
 
 **Description:**  
 Implemented a complete motion analysis pipeline to detect independently moving objects using sparse optical flow. Estimated camera motion via FOE (Focus of Expansion) and separated independently moving points using geometric deviation.
@@ -75,7 +75,7 @@ Implemented a complete motion analysis pipeline to detect independently moving o
 
 ---
 
-## 🏁 Summary
+## Summary
 
 These four projects provided hands-on experience with key computer vision tasks and advanced techniques in optimization, feature tracking, and model evaluation. Through this internship at **ByteDance**, I strengthened my skills in:
 

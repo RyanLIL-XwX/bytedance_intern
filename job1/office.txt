@@ -1,0 +1,28 @@
+image1: Detected 667 keypoints
+image2: Detected 610 keypoints
+image3: Detected 751 keypoints
+
+Processing image pair: IMG2536 and IMG2537
+Matches: 229, fraction in image1: 0.34, fraction in image2: 0.38
+Inlier Ratio of Fundamental Matrix: 82.97%
+Homography Inliers: 149 / 190 (78.42%)
+Decision: YES, IMG2536_IMG2537 can be accurately aligned.
+Reason: 78.42% of F inliers also passed the homography test.
+
+Processing image pair: IMG2536 and IMG2538
+Matches: 127, fraction in image1: 0.19, fraction in image2: 0.17
+Inlier Ratio of Fundamental Matrix: 66.14%
+Homography Inliers: 46 / 84 (54.76%)
+Decision: YES, IMG2536_IMG2538 can be accurately aligned.
+Reason: 54.76% of F inliers also passed the homography test.
+
+Processing image pair: IMG2537 and IMG2538
+Matches: 95, fraction in image1: 0.16, fraction in image2: 0.13
+Inlier Ratio of Fundamental Matrix: 58.95%
+Homography Inliers: 33 / 56 (58.93%)
+Decision: YES, IMG2537_IMG2538 can be accurately aligned.
+Reason: 58.93% of F inliers also passed the homography test.
+
+Largest connected component contains 3 images.
+Multi-image stitching: Chosen anchor image IMG2537
+Saved multi-image mosaic: test/IMG2536_IMG2537_IMG2538_multi_mosaic.jpg
